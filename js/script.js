@@ -8,7 +8,13 @@ L'output del prezzo finale va messo fuori in forma umana
 (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
 //INPUT
-//chiedere all'utente km ed età
+//chiedere all'utente km ed età NB convertire in NUMERO
+const userAge = parseInt(prompt("Quanti anni hai?"));
+const userKm = parseInt(prompt("Quanti km devi percorrere?"))
+
+console.log(userAge, typeof(userAge));
+console.log(userKm, typeof(userKm));
+
 
 //PROCESSING
 //generare il prezzo intero del biglietto (0.21 € al km)
