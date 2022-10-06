@@ -30,14 +30,24 @@ const youngCost = fullCost - discount20;
 const oldCost = fullCost - discount40;
 console.log(youngCost, oldCost)
 
+//decimal
+const youngCostDecimal = youngCost.toFixed(2);
+console.log(youngCostDecimal);
+
+const oldCostDecimal = oldCost.toFixed(2);
+console.log(oldCostDecimal);
+
+const fullCostDecimal = fullCost.toFixed(2);
+console.log(fullCostDecimal);
+
 //OUTPUT
 // arrotondo tutti i prezzi ai centesimi 0.00
 // alert Messaggio: Salve cliente,il prezzo del tuo biglietto é...
 const message ="Il prezzo del tuo biglietto è di "
 if (userAge < 18){
-    alert(message + youngCost)
+    alert(message + youngCostDecimal + " euro")
 } else if (userAge >= 65){
-    alert(message + oldCost)
+    alert(message + oldCostDecimal + " euro")
 } else{
-    alert(message + fullCost)
+    alert(message + fullCostDecimal + " euro")
 }
